@@ -13,6 +13,10 @@
   padding: 30px 50px; /* Increased padding for a larger navbar */
 }
 
+.phone {
+  padding: '20px 20px';
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -87,5 +91,9 @@
 
   .nav-link::before {
     bottom: 8px;
+  }
+
+  .phone {
+    padding: '10px 10px';
   }
 }

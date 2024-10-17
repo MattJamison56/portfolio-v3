@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{padding: '20px 20px'}}>
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top phone">
       <div className="container-fluid">
         <a className="navbar-brand" href="#" style={{color: '#eae2cb'}}>
           matt's portfolio
