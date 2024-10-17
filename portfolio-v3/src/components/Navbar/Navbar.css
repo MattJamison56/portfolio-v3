@@ -10,7 +10,7 @@
   animation: fadeInDown 1.3s ease forwards;
   animation-delay: 1.3s;
   z-index: 10;
-  padding: 15px 30px; /* Increased padding for a larger navbar */
+  padding: 30px 50px; /* Increased padding for a larger navbar */
 }
 
 @keyframes fadeInDown {
