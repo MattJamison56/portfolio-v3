@@ -1,0 +1,161 @@
+/* src/components/ContactSection/ContactSection.css */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #eae2cb;
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+  width: 100vw;
+  padding: 20px; /* Adds padding around the content */
+}
+
+.section-title-contact {
+  margin-top: 10px;
+  font-size: clamp(40px, 10vw, 200px); /* Responsive font size */
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-stroke-color: #3f3f3f;
+  -webkit-text-stroke-width: 0.051em; 
+  color: #ffffe7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.all-contact {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+
+  height: 500px;
+}
+
+.getintouch {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #3f3f3f;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.input-row {
+  display: flex;
+  width: 100%;
+}
+
+.contact-inputs {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  font-size: 24px;
+}
+
+.submit {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffe7;
+  background-color: #3f3f3f;
+  transition: 0.3s ease;
+  font-size: 24px;
+}
+
+.submit:hover {
+  transform: scale(1.02);
+  color: #3f3f3f;
+  background-color: #f0baa5;
+}
+
+.contact-stuff {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  margin-left: 100px;
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #3f3f3f;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-thing {
+  font-family: 'Poppins', sans-serif;
+  color: #3f3f3f;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-thing svg {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.credit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  color: #3f3f3f;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .all-contact {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .contact-form {
+    width: 350px;
+    height: auto;
+  }
+  .getintouch {
+    font-size: 30px;
+  }
+  .contact-inputs {
+    font-size: 12px;
+  }
+  .submit {
+    font-size: 12px;
+  }
+  .contact-stuff {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 350px;
+  }
+  .contact-title {
+    font-size: 20px;
+  }
+  .contact-thing {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .contact-thing svg {
+    height: 12px;
+  }
+  .credit {
+    margin-top: 150px;
+    font-size: 12px;
+  }
+}

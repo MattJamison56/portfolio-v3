@@ -1,0 +1,177 @@
+/* src/components/HeroSection/HeroSection.css */
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #eae2cb;
+}
+
+.bg-img-square {
+  background-color: #3f3f3f;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  width: 60%;
+  height: 60%;
+  animation: shrink 1.3s ease forwards;
+}
+
+@keyframes shrink {
+  0% {
+    transform: translateX(-50%) scale(2.5);
+  }
+  70% {
+    transform: translateX(-50%) scale(0.995);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.hero-content {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-0%, -50%);
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.hero-link,
+.hero-text {
+  display: block;
+  font-size: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  animation: slideInRight 1.6s ease forwards;
+  text-decoration: none;
+  color: #ffffe7;
+  transition: 0.6s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Customize text selection highlight */
+.hero-link::selection,
+.hero-text::selection {
+  background: transparent; /* Removes default blue highlight */
+  color: #ffffe7;          /* Maintains text color */
+}
+
+/* Optionally, prevent text selection */
+.hero-link,
+.hero-text {
+  user-select: none; /* Prevents text selection */
+}
+
+/* Customize focus outline */
+.hero-link:focus {
+  outline: 2px solid #95a897; /* Custom outline color */
+  outline-offset: 4px;         /* Space between outline and element */
+}
+
+/* Alternatively, to remove the outline entirely (not recommended) */
+/*
+.hero-link:focus {
+  outline: none;
+}
+*/
+
+.hero-link.bigboy1 {
+  animation-delay: 0.8s;
+  -webkit-text-stroke-width: 0.05em;
+  -webkit-text-stroke-color: #3f3f3f;
+}
+
+.hero-link.bigboy3 {
+  animation-delay: 0.9s;
+  -webkit-text-stroke-width: 0.04em;
+  -webkit-text-stroke-color: #3f3f3f;
+}
+
+.hero-link:hover {
+  font-size: 202px;
+  -webkit-text-stroke-color: #95a897;
+  color: #ffffe7;
+}
+
+.hero-text.bigboy2 {
+  animation-delay: 1s;
+  color: transparent;
+  -webkit-text-stroke-width: 0.05em;
+  -webkit-text-stroke-color: #f0baa5;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-50%) translateX(-50%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-50%) translateX(3%);
+  }
+  100% {
+    transform: translateX(-50%) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cloudAnimate {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 250%;
+  }
+}
+
+
+@media (max-width: 1700px) {
+  .hero-link,
+  .hero-text {
+    font-size: 150px;
+    -webkit-text-stroke-width: 2.5px;
+    text-decoration: none;
+  }
+
+  .hero-link:hover {
+    font-size: 152px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-link,
+  .hero-text {
+    font-size: 100px;
+    -webkit-text-stroke-width: 2.5px;
+    text-decoration: none;
+  }
+
+  .hero-link:hover {
+    font-size: 102px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-link,
+  .hero-text {
+    font-size: 50px;
+    -webkit-text-stroke-width: 2.5px;
+    text-decoration: none;
+  }
+  .bg-img-square {
+    top: 360px;
+    width: 350px;
+    height: 200px;
+  }
+  .hero-link:hover {
+    font-size: 52px;
+  }
+}

@@ -1,0 +1,142 @@
+/* src/components/ProjectsSection/ProjectCard.css */
+
+.project-content {
+  display: flex;
+  width: 100%;
+}
+
+.project-left .title-photo {
+  order: 1;
+}
+
+.project-left .project-desc-container {
+  order: 2;
+}
+
+.project-right .title-photo {
+  order: 2;
+}
+
+.project-right .project-desc-container {
+  order: 1;
+}
+
+.title-photo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex: 1;
+}
+
+.project-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  flex: 1;
+}
+
+.project-desc {
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #3f3f3f;
+  font-size: 1.5vw;
+  font-weight: 500;
+  padding: 40px;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #3f3f3f;
+  font-size: 3vw;
+  margin-bottom: 10px;
+}
+
+.year-skills {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #3f3f3f;
+  font-size: 1.5vw;
+  margin-bottom: 30px;
+}
+
+.skills {
+  margin-right: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #95a897;
+  font-size: 1.5vw;
+  border: dashed;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.website-photo {
+  height: 25vw;
+  width: auto;
+  border-radius: 0;
+  transition: 0.3s ease;
+  margin: 10px;
+}
+
+.website-photo:hover {
+  border-radius: 20px;
+  transform: scale(1.01);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .project {
+    height: auto;
+  }
+
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-left .title-photo,
+  .project-right .title-photo {
+    order: 1;
+  }
+
+  .project-left .project-desc-container,
+  .project-right .project-desc-container {
+    order: 4;
+  }
+
+  .title-photo {
+    margin: 10px 0;
+  }
+
+  .year-skills {
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .skills {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  .website-photo {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .project-desc {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .project-title {
+    font-size: 24px;
+    margin-top: 0;
+  }
+}

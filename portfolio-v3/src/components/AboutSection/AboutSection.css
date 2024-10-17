@@ -1,0 +1,96 @@
+/* src/components/AboutSection/AboutSection.css */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #eae2cb;
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+  width: 100vw;
+  padding: 20px; /* Adds padding around the content */
+}
+
+.section-title-about {
+  margin-top: 10px;
+  font-size: clamp(40px, 10vw, 200px); /* Responsive font size */
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-stroke-color: #3f3f3f;
+  -webkit-text-stroke-width: 0.051em; 
+  color: #ffffe7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-content {
+  /* Flex properties are now handled by MUI's Box component */
+  width: 80%; /* Adjusted width for better spacing */
+  margin-top: 50px; /* Adds spacing below the title */
+}
+
+.profile-photo {
+  width: 100%; /* Ensures the image takes up the full width of the box */
+  max-width: 500px; /* Limits the maximum width of the image */
+  height: auto;
+  border-radius: 10px; /* Adds border radius for aesthetics */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.text-box {
+  /* Styling handled by Box props; additional styles can be added here if needed */
+  max-width: 1000px; /* Limits the maximum width for better readability */
+  font-weight: 500;
+  color: #3f3f3f;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.little-about {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: clamp(30px, 4.5vw, 45px); /* Responsive font size */
+  margin-bottom: 20px;
+  display: block; /* Ensures it occupies the full width */
+}
+
+.about-p {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(21px, 2.25vw, 27px); /* Responsive font size */
+  margin-top: 15px;
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-content {
+    width: 90%; /* Adjusts width for smaller screens */
+  }
+  .profile-photo {
+    width: 100%; /* Adjusts image width for smaller screens */
+    max-width: 300px; /* Limits the maximum width */
+    margin-bottom: 20px; /* Adds spacing below the image */
+  }
+  .text-box {
+    width: 100%;
+    text-align: center; /* Centers text on smaller screens */
+  }
+  .little-about {
+    font-size: 20px;
+    margin: 0 0 20px 0; /* Adjusts margins */
+  }
+  .about-p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center; /* Centers text on smaller screens */
+  }
+}

@@ -1,0 +1,22 @@
+/* src/index.css */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 0;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #eae2cb;
+  color: transparent;
+  cursor: url('https://cdn-icons-png.flaticon.com/512/25/25427.png'), auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 2000px) {
+  /* Adjust font sizes and dimensions as needed */
+}

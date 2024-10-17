@@ -1,0 +1,91 @@
+/* src/components/Navbar/Navbar.css */
+
+.navbar {
+  background-color: #3f3f3f;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: fadeInDown 1.3s ease forwards;
+  animation-delay: 1.3s;
+  z-index: 10;
+  padding: 15px 30px; /* Increased padding for a larger navbar */
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-brand {
+  color: #ffffe7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem; /* Increased font size */
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: #ffffe7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 15px 25px; /* Increased padding for larger clickable area */
+  font-size: 1.2rem; /* Increased font size */
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #e8e8d1;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #f0baa5;
+  bottom: 10px;
+  left: 10%;
+  transition: width 0.3s ease;
+  opacity: 0.6;
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+/* Hamburger Icon Adjustments */
+.navbar-toggler {
+  padding: 10px;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .nav-link::before {
+    bottom: 8px;
+  }
+}
