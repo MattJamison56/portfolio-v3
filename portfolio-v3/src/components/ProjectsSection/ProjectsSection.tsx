@@ -9,10 +9,10 @@ import theBuzzImage from '../../assets/images/buzz/thebuzz.png';
 import concertBuddieImage from '../../assets/images/concertbuddie/concertbuddiehome.jpg';
 
 // Import placeholder images for new projects
-import gmailWrappedImage from '../../assets/images/gmailWrapped/gmailWrapped.jpg'; 
+import gmailWrappedImage from '../../assets/images/gmailwrapped/gmailWrapped.jpg'; 
 import compaktImage from '../../assets/images/compakt/compakt.jpg'; 
-import renewableFarmsMonitorImage from '../../assets/images/renewableFarms/greenGillsProject.png'; 
-import beatTrackerImage from '../../assets/images/beatTracker/beatTracker.png'; 
+import renewableFarmsMonitorImage from '../../assets/images/renewablefarms/greenGillsProject.png'; 
+import beatTrackerImage from '../../assets/images/beattracker/beatTracker.png'; 
 
 const ProjectsSection: React.FC = () => {
   const projects = [
